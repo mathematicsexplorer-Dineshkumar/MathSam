@@ -94,7 +94,7 @@ export default function AdminPDFsPage() {
         <Link href="/admin" style={{display:'flex',alignItems:'center',gap:'8px',marginBottom:'28px',textDecoration:'none'}}>
           <div style={{width:'30px',height:'30px',background:'linear-gradient(135deg,#f59e0b,#d97706)',borderRadius:'8px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'16px'}}>📐</div>
           <div>
-            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'16px',color:'#fff',fontWeight:'700'}}>MathSam</div>
+            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'16px',color:'#fff',fontWeight:'700'}}>MathSamiksha</div>
             <div style={{fontSize:'9px',color:'#f59e0b',letterSpacing:'1px'}}>ADMIN</div>
           </div>
         </Link>

@@ -52,7 +52,7 @@ export default function AdminPage() {
         <div style={{display:'flex',alignItems:'center',gap:'10px',marginBottom:'32px',padding:'0 8px'}}>
           <div style={{width:'34px',height:'34px',background:'linear-gradient(135deg,#f59e0b,#d97706)',borderRadius:'8px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'18px'}}>📐</div>
           <div>
-            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'18px',fontWeight:'700',color:'#fff'}}>MathSam</div>
+            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'18px',fontWeight:'700',color:'#fff'}}>MathSamiksha</div>
             <div style={{fontSize:'10px',color:'#f59e0b',fontWeight:'600',letterSpacing:'1px'}}>ADMIN PANEL</div>
           </div>
         </div>

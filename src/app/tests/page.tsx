@@ -45,7 +45,7 @@ export default function TestsPage() {
       <nav className="nav-glass" style={{padding:'0 60px',height:'68px',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
         <Link href="/" style={{display:'flex',alignItems:'center',gap:'10px',textDecoration:'none'}}>
           <div style={{width:'34px',height:'34px',background:'linear-gradient(135deg,#f59e0b,#d97706)',borderRadius:'8px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'18px'}}>📐</div>
-          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'20px',fontWeight:'700',color:'#fff'}}>MathSam</span>
+          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'20px',fontWeight:'700',color:'#fff'}}>MathSamiksha</span>
         </Link>
         <div style={{display:'flex',gap:'28px',alignItems:'center'}}>
           <Link href="/courses" className="nav-link">Courses</Link>
@@ -116,9 +116,9 @@ export default function TestsPage() {
                   <span style={{fontFamily:"'Playfair Display',serif",fontSize:'22px',fontWeight:'700',color:'#8b5cf6'}}>
                     {test.price === 0 ? 'FREE' : `₹${test.price}`}
                   </span>
-                  <button className="btn-attempt" style={{padding:'9px 20px',borderRadius:'8px',fontSize:'13px'}}>
-                    Attempt →
-                  </button>
+                  <Link href={`/tests/${test.id}/attempt`} className="btn-attempt" style={{padding:'9px 20px',borderRadius:'8px',fontSize:'13px',textDecoration:'none'}}>
+                   Attempt →
+                  </Link>
                 </div>
               </div>
             ))}

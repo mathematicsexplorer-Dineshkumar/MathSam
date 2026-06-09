@@ -63,7 +63,7 @@ export default function DashboardPage() {
       <div className="sidebar" style={{display:'flex',flexDirection:'column',padding:'24px 16px'}}>
         <Link href="/" style={{display:'flex',alignItems:'center',gap:'10px',marginBottom:'36px',textDecoration:'none',padding:'0 8px'}}>
           <div style={{width:'34px',height:'34px',background:'linear-gradient(135deg,#f59e0b,#d97706)',borderRadius:'8px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'18px'}}>📐</div>
-          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'20px',fontWeight:'700',color:'#fff'}}>MathSam</span>
+          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'20px',fontWeight:'700',color:'#fff'}}>MathSamiksha</span>
         </Link>
 
         {/* User */}

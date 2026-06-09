@@ -29,11 +29,11 @@ export default function HomePage() {
       <nav className="nav-glass" style={{position:'fixed',top:0,left:0,right:0,zIndex:50,padding:'0 60px',height:'70px',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
         <div style={{display:'flex',alignItems:'center',gap:'10px'}}>
           <div style={{width:'36px',height:'36px',background:'linear-gradient(135deg,#f59e0b,#d97706)',borderRadius:'10px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'20px'}}>📐</div>
-          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'22px',fontWeight:'700',letterSpacing:'0.5px'}}>MathSam</span>
+          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'22px',fontWeight:'700',letterSpacing:'0.5px'}}>MathSamiksha</span>
         </div>
         <div style={{display:'flex',gap:'32px',alignItems:'center'}}>
           <Link href="/courses" className="nav-link">Courses</Link>
-          <Link href="/pdfs" className="nav-link">PDF Notes</Link>
+          <Link href="/pdfs" className="nav-link">PDF Notes & Ebooks</Link>
           <Link href="/tests" className="nav-link">Test Series</Link>
           <Link href="/login" className="btn-outline" style={{padding:'8px 22px',borderRadius:'8px',fontSize:'14px',fontWeight:'600'}}>Login</Link>
           <Link href="/register" className="btn-gold" style={{padding:'8px 22px',borderRadius:'8px',fontSize:'14px'}}>Start Free →</Link>
@@ -44,12 +44,12 @@ export default function HomePage() {
       <section className="hero-bg dots" style={{paddingTop:'130px',paddingBottom:'80px',padding:'130px 60px 80px'}}>
         <div style={{maxWidth:'1200px',margin:'0 auto',display:'grid',gridTemplateColumns:'1fr 1fr',gap:'80px',alignItems:'center'}}>
           <div>
-            <div className="label" style={{marginBottom:'20px'}}>🇮🇳 India's Premier Math Platform</div>
+            <div className="label" style={{marginBottom:'20px'}}> Math Learning Platform</div>
             <h1 style={{fontFamily:"'Playfair Display',serif",fontSize:'68px',fontWeight:'900',lineHeight:'1.05',marginBottom:'20px'}}>
-              Master<br/><span className="gold-gradient">Mathematics</span><br/>Like a Pro
+              Explore <br/><span className="gold-gradient">Mathematics</span><br/> -Language Of Universe
             </h1>
             <p style={{fontSize:'17px',color:'rgba(255,255,255,0.55)',lineHeight:'1.7',marginBottom:'12px',fontWeight:'300'}}>
-              JEE • NEET • UPSC • NDA • SSC • Board Exams
+              IIT JAM • CSIR NET • GATE • NBHM • CMI • Other Exams
             </p>
             <p style={{fontSize:'14px',color:'rgba(255,255,255,0.35)',marginBottom:'36px'}}>
               Expert-crafted courses, concise PDF notes & smart test series
@@ -59,7 +59,7 @@ export default function HomePage() {
               <Link href="/register" className="btn-outline" style={{padding:'14px 32px',borderRadius:'12px',fontSize:'16px'}}>Join Free</Link>
             </div>
             <div style={{display:'flex',gap:'40px'}}>
-              {[['10K+','Students'],['50+','Courses'],['200+','PDFs'],['4.9★','Rating']].map(([n,l])=>(
+              {[['00+','Students'],['00+','Courses'],['00+','PDFs'],['4.9★','Rating']].map(([n,l])=>(
                 <div key={l}>
                   <div style={{fontFamily:"'Playfair Display',serif",fontSize:'26px',fontWeight:'700',color:'#f59e0b'}}>{n}</div>
                   <div style={{fontSize:'12px',color:'rgba(255,255,255,0.4)',marginTop:'2px'}}>{l}</div>
@@ -69,7 +69,7 @@ export default function HomePage() {
           </div>
           <div className="float" style={{display:'flex',flexDirection:'column',gap:'14px'}}>
             {[
-              {icon:'🎥',title:'Video Courses',desc:'HD lectures by IIT/NIT faculty',tag:'Most Popular'},
+              {icon:'🎥',title:'Video Courses',desc:'Best lectures by Experienced faculty',tag:'Most Popular'},
               {icon:'📄',title:'PDF Notes',desc:'Concise exam-ready study material',tag:'500+ pages'},
               {icon:'📝',title:'Test Series',desc:'Timed tests with instant analytics',tag:'New'},
             ].map(f=>(
@@ -92,7 +92,7 @@ export default function HomePage() {
           <div className="label" style={{marginBottom:'14px'}}>Exams We Cover</div>
           <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'38px',marginBottom:'36px'}}>Your Dream Exam, Our Expertise</h2>
           <div style={{display:'flex',flexWrap:'wrap',gap:'10px',justifyContent:'center'}}>
-            {['JEE Main','JEE Advanced','NEET','UPSC','NDA','SSC CGL','Class 10','Class 12','CUET','CAT','GATE','BITSAT'].map(e=>(
+            {['IIT JAM','CSIR NET','GATE','TIFR GS','NBHM','CMI','Many more Batches Coming Soon'].map(e=>(
               <span key={e} className="exam-pill" style={{padding:'9px 18px',borderRadius:'50px',fontSize:'14px',fontWeight:'500'}}>{e}</span>
             ))}
           </div>
@@ -102,16 +102,15 @@ export default function HomePage() {
       {/* Features */}
       <section style={{padding:'70px 60px',maxWidth:'1200px',margin:'0 auto'}}>
         <div style={{textAlign:'center',marginBottom:'50px'}}>
-          <div className="label" style={{marginBottom:'14px'}}>Why MathSam</div>
+          <div className="label" style={{marginBottom:'14px'}}>Why MathSamiksha</div>
           <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'38px'}}>Everything You Need to Excel</h2>
         </div>
         <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'20px'}}>
           {[
-            {icon:'🎯',t:'Exam-Focused',d:'Content curated specifically for Indian competitive exams'},
-            {icon:'👨‍🏫',t:'Expert Faculty',d:'Taught by IIT/NIT alumni with 10+ years experience'},
+            {icon:'🎯',t:'Exam-Focused',d:'Content curated specifically for  competitive exams'},
+            {icon:'👨‍🏫',t:'Expert Faculty',d:'Taught by Best Faculty and  Experienced Teachers'},
             {icon:'📊',t:'Smart Analytics',d:'Track progress, identify weak areas, improve faster'},
             {icon:'📱',t:'Mobile Ready',d:'Study anywhere, anytime on any device'},
-            {icon:'🔒',t:'Secure Payments',d:'Safe Razorpay payments with instant access'},
             {icon:'🏆',t:'Proven Results',d:'95% of our students improve their scores significantly'},
           ].map(f=>(
             <div key={f.t} className="card" style={{borderRadius:'16px',padding:'28px'}}>
@@ -126,7 +125,7 @@ export default function HomePage() {
       {/* CTA */}
       <section style={{padding:'80px 60px',textAlign:'center',background:'linear-gradient(135deg,rgba(245,158,11,0.08),rgba(245,158,11,0.02))',borderTop:'1px solid rgba(245,158,11,0.15)',borderBottom:'1px solid rgba(245,158,11,0.15)'}}>
         <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'44px',marginBottom:'14px'}}>Ready to <span className="gold-gradient">Ace Your Exam?</span></h2>
-        <p style={{color:'rgba(255,255,255,0.45)',marginBottom:'30px',fontSize:'16px'}}>Join 10,000+ students already learning on MathSam</p>
+        <p style={{color:'rgba(255,255,255,0.45)',marginBottom:'30px',fontSize:'16px'}}>Join 10,000+ students already learning on MathSamiksha</p>
         <Link href="/register" className="btn-gold" style={{padding:'16px 48px',borderRadius:'12px',fontSize:'17px'}}>Start Learning Free →</Link>
       </section>
 
@@ -134,7 +133,7 @@ export default function HomePage() {
       <footer style={{padding:'50px 60px',borderTop:'1px solid rgba(255,255,255,0.05)'}}>
         <div style={{maxWidth:'1200px',margin:'0 auto',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
           <div>
-            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'22px',fontWeight:'700',marginBottom:'6px'}}>📐 MathSam</div>
+            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'22px',fontWeight:'700',marginBottom:'6px'}}>ॐ MathSamiksha</div>
             <p style={{color:'rgba(255,255,255,0.3)',fontSize:'13px'}}>India's #1 Online Math Learning Platform</p>
           </div>
           <div style={{display:'flex',gap:'28px'}}>
@@ -142,7 +141,7 @@ export default function HomePage() {
               <Link key={l} href={`/${l.toLowerCase()}`} style={{color:'rgba(255,255,255,0.4)',textDecoration:'none',fontSize:'14px'}}>{l}</Link>
             ))}
           </div>
-          <p style={{color:'rgba(255,255,255,0.2)',fontSize:'12px'}}>© 2025 MathSam. All rights reserved.</p>
+          <p style={{color:'rgba(255,255,255,0.2)',fontSize:'12px'}}>© 2026 MathSamiksha. All rights reserved.</p>
         </div>
       </footer>
     </main>

@@ -48,7 +48,7 @@ export default function LoginPage() {
       <div className="left-panel" style={{flex:'1',padding:'60px',display:'flex',flexDirection:'column',justifyContent:'center'}}>
         <Link href="/" style={{display:'flex',alignItems:'center',gap:'10px',marginBottom:'60px',textDecoration:'none'}}>
           <div style={{width:'40px',height:'40px',background:'linear-gradient(135deg,#f59e0b,#d97706)',borderRadius:'10px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'22px'}}>📐</div>
-          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'24px',fontWeight:'700',color:'#fff'}}>MathSam</span>
+          <span style={{fontFamily:"'Playfair Display',serif",fontSize:'24px',fontWeight:'700',color:'#fff'}}>MathSamiksha</span>
         </Link>
         <h2 style={{fontFamily:"'Playfair Display',serif",fontSize:'42px',fontWeight:'900',color:'#fff',lineHeight:'1.1',marginBottom:'16px'}}>
           Your <span className="gold-gradient">Math Journey</span><br/>Starts Here

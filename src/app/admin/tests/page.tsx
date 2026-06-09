@@ -96,7 +96,7 @@ export default function AdminTestsPage() {
         <Link href="/admin" style={{display:'flex',alignItems:'center',gap:'8px',marginBottom:'28px',textDecoration:'none'}}>
           <div style={{width:'30px',height:'30px',background:'linear-gradient(135deg,#f59e0b,#d97706)',borderRadius:'8px',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'16px'}}>📐</div>
           <div>
-            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'16px',color:'#fff',fontWeight:'700'}}>MathSam</div>
+            <div style={{fontFamily:"'Playfair Display',serif",fontSize:'16px',color:'#fff',fontWeight:'700'}}>MathSamiksha</div>
             <div style={{fontSize:'9px',color:'#f59e0b',letterSpacing:'1px'}}>ADMIN</div>
           </div>
         </Link>
@@ -158,6 +158,9 @@ export default function AdminTestsPage() {
                 <button onClick={()=>deleteTest(test.id)} style={{padding:'7px 14px',borderRadius:'8px',background:'rgba(239,68,68,0.08)',border:'1px solid rgba(239,68,68,0.2)',color:'rgba(239,68,68,0.8)',cursor:'pointer',fontSize:'12px',fontFamily:"'DM Sans',sans-serif"}}>
                   Delete
                 </button>
+                <Link href={`/admin/tests/${test.id}/questions`} style={{padding:'7px 14px',borderRadius:'8px',background:'rgba(139,92,246,0.1)',border:'1px solid rgba(139,92,246,0.3)',color:'#8b5cf6',fontSize:'12px',textDecoration:'none'}}>
+  + Questions
+</Link>
               </div>
             ))}
           </div>
@@ -182,7 +185,7 @@ export default function AdminTestsPage() {
                   <label className="label">EXAM TYPE</label>
                   <select className="input" value={form.exam_type} onChange={e=>setForm({...form,exam_type:e.target.value})}>
                     <option value="">Select...</option>
-                    {['JEE Main','JEE Advanced','NEET','UPSC','NDA','SSC CGL','Class 10','Class 12'].map(e=><option key={e} value={e}>{e}</option>)}
+                    {['CSIR NET','GATE','TIFR GS','NBHM','CMI','JEE Main','JEE Advanced','NEET','UPSC','NDA','SSC CGL','Class 10','Class 12'].map(e=><option key={e} value={e}>{e}</option>)}
                   </select>
                 </div>
                 <div>
