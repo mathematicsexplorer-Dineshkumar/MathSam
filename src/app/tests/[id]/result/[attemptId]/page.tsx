@@ -103,7 +103,7 @@ export default function ResultPage() {
       {/* Header */}
       <div style={{background:'#1a3a6b',color:'white',padding:'14px 20px',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
         <div style={{display:'flex',alignItems:'center',gap:'12px'}}>
-          <div style={{background:'white',color:'#1a3a6b',fontWeight:'800',fontSize:'12px',padding:'3px 8px',borderRadius:'4px'}}>NTA</div>
+          <div style={{background:'white',color:'#1a3a6b',fontWeight:'800',fontSize:'12px',padding:'3px 8px',borderRadius:'4px'}}>MathSamiksha</div>
           <span style={{fontWeight:'700',fontSize:'15px'}}>{test?.title} — Result</span>
         </div>
         <Link href="/dashboard" style={{color:'rgba(255,255,255,0.8)',textDecoration:'none',fontSize:'13px',border:'1px solid rgba(255,255,255,0.3)',padding:'6px 14px',borderRadius:'6px'}}>
