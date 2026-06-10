@@ -96,20 +96,7 @@ export default function ExamAttemptPage() {
       if (!user) { router.push('/login'); return }
       setUser(user)
 
-      // ✅ Check if already attempted — redirect to result
-      const { data: existing } = await supabase
-        .from('test_attempts')
-        .select('id')
-        .eq('test_id', testId)
-        .eq('user_id', user.id)
-        .order('completed_at', { ascending: true })
-        .limit(1)
-        .single()
-      if (existing) {
-        toast.error('You have already attempted this test!')
-        router.push(`/tests/${testId}/result/${existing.id}`)
-        return
-      }
+      
 
       const { data: testData } = await supabase.from('tests').select('*').eq('id', testId).single()
       if (!testData) { router.push('/tests'); return }
@@ -420,7 +407,7 @@ export default function ExamAttemptPage() {
       {/* Refresh Warning Banner */}
       {showRefreshWarning && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 999, background: refreshCount >= 2 ? '#c0392b' : '#e67e22', color: 'white', padding: '12px 20px', textAlign: 'center', fontWeight: '700', fontSize: '14px', animation: 'slideIn 0.3s ease', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }}>
-          ⚠️ WARNING: Refresh detected! &nbsp;
+          ⚠️ WARNING: Refresh detected! - Do not Refresh Tab  &nbsp;
           {refreshCount >= 2
             ? '🚨 LAST WARNING — test is being auto-submitted!'
             : `You have ${2 - refreshCount} refresh(es) remaining. 3rd refresh = AUTO-SUBMIT!`}
